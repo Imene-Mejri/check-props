@@ -8,11 +8,11 @@ import Profile1 from './profile/Profile1';
 function App() {
   const person = 
     {
-      fullName:'kais',
+      fullName:'kaies',
       Bio: 56,
       profession: 'devloper',
       img:'/images/pic1.jpg',
-      age:'',
+      age:30,
     }
   
   
@@ -25,7 +25,7 @@ console.log (person)
 
   return (
     <div className="App">
-      <Profile1 product={person} handleName={handleName}/>
+      <Profile1  fullName={person.fullName} Bio={person.Bio}  profession={person.profession} age={person.age} img={person.img} handleName={handleName}/>
     </div>
   );
 }
